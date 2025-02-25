@@ -1,0 +1,155 @@
+
+.card-container {
+    display: flex;
+    justify-content:left ;
+    padding: 20px;
+    font-family: "Poppins", serif;
+    margin-left: 200px;
+  }
+  
+  .card {
+    background-color: rgb(39, 40, 41);    ;
+    width: 280px;
+    height: 550px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    width: 230px;
+    height: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .card-name {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0;
+    color: white;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #d5d5d5;
+    margin: 5px;
+  }
+  
+  .btn-letstalk {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  
+  .btn-letstalk:hover {
+    background-color: var(--animation);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    color: #eaeaea;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: var(--animation);
+  }
+
+
+  /*tablet view*/
+  @media screen and (max-width: 1200px) {
+    .card-container {
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      
+  }
+  .card {
+    width: 30rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-description {
+    font-size: 1rem;
+    padding: 0 15%;
+  }
+
+  }
+  
+  /* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  
+ .card-container {
+      align-items: center;
+      justify-content: center;
+      
+      
+      
+  }
+  .card {
+    width: 70%;
+    
+    
+  }
+  .card-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  
+  .card-container {
+       align-items: center;
+       justify-content: center;
+       
+       
+       
+   }
+   .card {
+     width: 70%;
+     height: 70%;
+   }
+   .card-image {
+    width: 50vw;
+    height: 50vw;
+   }
+   .card-name {
+    font-size: 5vw;
+   }
+   .card-description {
+     font-size: 3vw;
+     padding: 0 1rem;
+   }
+
+   .btn-letstalk {
+    font-size: 5vw;
+    padding: 5vw;
+   }
+   .social-icon {
+    font-size: 5vw;
+    
+  }
+   
+ }

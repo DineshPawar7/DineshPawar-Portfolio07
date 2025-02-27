@@ -2,13 +2,10 @@
   display: flex;
   flex-direction: row;
   font-family: "Poppins", serif;
-  justify-content: end;
-  margin-right: 200px;
 }
 
 .home-content {
   padding: 20px;
-  margin-left: 80px;
   flex-grow: 1;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -23,6 +20,12 @@ h1 {
 
 .home-content span {
   color: var(--primary-color);
+}
+
+.home-content h3 {
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  margin-top: 2rem;
 }
 
 p {
@@ -92,7 +95,6 @@ p {
 .home-mywork-btn span {
   display: flex;
   color: rgb(255, 255, 255);
-  vertical-align: middle;
 }
 
 .home-mywork-btn span:hover {
@@ -126,22 +128,20 @@ p {
 @media (max-width: 1200px) {
   .home-container {
     flex-direction: column;
-    text-align: center;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 0;
   }
 
   .home-content {
     padding: 0;
     margin-left: 0;
   }
-
+  
   h1 {
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
   p {
-    padding: 0 80px 0 80px;
+    padding: 0 80px;
   }
 
   .home-buttons {
@@ -155,6 +155,35 @@ p {
   .home-stat-item {
     justify-content: center;
   }
+
+  .home-stat-item .state-item-home {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 0.3;
+  }
+
+  .home-content h3 {
+    font-size: 1.8vw;
+  }
+
+  .home-stat-item p {
+    font-size: 1.2vw;
+  }
+
+  .home-stat-item h1 {
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -167,17 +196,9 @@ p {
     margin-left: 0;
   }
 
-  .home-stats {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .home-stat-item h1 {
-    font-size: 36px;
-  }
-
-  .home-stat-item p {
-    font-size: 16px;
+  h1 {
+    font-size: 8vw;
+    text-align: center;
   }
 
   .home-buttons {
@@ -188,5 +209,55 @@ p {
   .home-connect-btn, .home-mywork-btn {
     width: 100%;
     font-size: 16px;
+  }
+
+  .home-content h3 {
+    font-size: 2.5vw;
+  }
+
+  .home-stats {
+    margin-top: 0;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .home-stat-item {
+    justify-content: center;
+    text-align: center;
+    max-width: 30%;
+  }
+
+  .home-stat-item h1 {
+    font-size: 7vw;
+    line-height: 1;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .home-stat-item p {
+    margin-top: 0;
+    font-size: 1.8vw;
+    gap: 0;
+  }
+
+  .home-stat-item .state-item-home {
+    display: block;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .home-mywork-btn {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .home-connect-btn {
+    padding: 13px 0;
+    justify-content: center;
   }
 }

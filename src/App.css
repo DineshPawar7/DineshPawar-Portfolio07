@@ -8,3 +8,26 @@ body {
   font-family: Arial, sans-serif;
   background-color:  var(--bg);
 }
+
+.app-container {
+  align-items: center;
+  justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 10% 0 10%;
+}
+
+
+
+@media (max-width: 1000px) {
+  .app-container {
+    display:contents;
+  }
+}
+
+@media (max-width: 1000px) {
+.content-area {
+  margin: 0 10% 0 10%;
+}
+}

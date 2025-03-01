@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: #ff7b00;
   --bg: #101112;
@@ -5,29 +11,58 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color:  var(--bg);
+  font-family: "Poppins", serif;
+
+}
+.left-card{
+  position: sticky;
+    top: 15px;
 }
 
-.app-container {
-  align-items: center;
-  justify-content: center;
+.app-main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .app-main-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-card {
+    position: static;
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 0 10% 0 10%;
-}
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-
-
-@media (max-width: 1000px) {
-  .app-container {
-    display:contents;
+  .right-components {
+    width: 100%;
   }
 }
 
-@media (max-width: 1000px) {
-.content-area {
-  margin: 0 10% 0 10%;
-}
+@media screen and (max-width: 480px) {
+  .app-main-section {
+    display:block;
+    flex-direction: column;
+  }
+  .left-card {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+ 
 }

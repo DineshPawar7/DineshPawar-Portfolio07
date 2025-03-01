@@ -1,4 +1,24 @@
+
+
 footer {
+    margin-top: auto;
     text-align: center;
     margin: 20px;
+}
+
+.footer-text {
+    font-size: 15px;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+    }
+    .footer {
+        margin: 0;
+    }
+    .footer-text {
+        font-size: 8px;
+        padding: 0;
+    }
 }

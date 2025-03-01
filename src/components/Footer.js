@@ -4,9 +4,9 @@ import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p> 
-  &copy; 2025 <strong>Dinesh Pawar</strong>. All Rights Reserved
-</p>
+      <p className='footer-text'>
+        &copy; 2025 <strong>Dinesh Pawar</strong>. All Rights Reserved
+      </p>
     </footer>
   );
 };

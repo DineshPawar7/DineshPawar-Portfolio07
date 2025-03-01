@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 10px;
+    
     margin-bottom: 70px;
     z-index: 10;
   }
@@ -39,6 +38,19 @@
   @media screen and (max-width: 768px) {
     .icon {
       font-size: 20px;
+    }
+  
+    .icon-link {
+      margin: 0 8px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .icon-container {
+      padding: 1.5vw;
+    }
+    .icon {
+      font-size: 5vw;
     }
   
     .icon-link {

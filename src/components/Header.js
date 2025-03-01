@@ -12,8 +12,9 @@ import { MdWorkOutline } from "react-icons/md";
 const Header = () => {
   return (
     <header className="header">
+
       <div className="icon-container">
-        <Link to="/" className="icon-link">
+      <Link to="/" className="icon-link">
           <AiOutlineHome className="icon" />
         </Link>
         <Link to="/projects" className="icon-link">
@@ -32,7 +33,9 @@ const Header = () => {
           <IoMailOpenOutline className="icon" />
         </Link>
       </div>
+      
     </header>
+    
   );
 };
 

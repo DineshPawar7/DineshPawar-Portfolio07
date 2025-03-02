@@ -1,0 +1,95 @@
+.skills-tools-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  
+  /* Center align the whole section */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-tools-heading {
+  font-size: 75px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+.skills-tools-yellow {
+  color: var(--primary-color);
+}
+
+.skills-tools-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the content */
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.skills-section, 
+.tools-section {
+  width: 48%;
+}
+
+/* Center align the text inside skills and tools sections */
+.skills-title, 
+.tools-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+/* Optional: To make sure item lists inside each section are centered */
+.skills-list,
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Common Card Styles */
+.skills-item, 
+.tools-item {
+  display: flex;
+  align-items: center;
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  gap: 10px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 2px 4px rgba(255, 255, 0, 0.2);
+}
+
+/* Icons Styling */
+.skills-icon, 
+.tools-icon {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.skills-name, 
+.tools-name {
+  color: white;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 1100px) {
+  .skills-tools-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-section, 
+  .tools-section {
+    width: 80%;
+  }
+}

@@ -16,6 +16,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .experience-card {
@@ -80,11 +81,20 @@
   color: #e6e6e6;
   margin-top: 10px;
 }
+@media screen and (max-width: 1100px) {
+  .experience-heading {
+    font-size: 75px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+  }
+
+}
 
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
   .experience-heading {
-    font-size: 14vw;
+    font-size: 12vw;
   }
 
   .experience-card {

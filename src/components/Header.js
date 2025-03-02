@@ -20,7 +20,7 @@ const Header = () => {
         <Link to="/projects" className="icon-link">
           <IoFolderOpenOutline className="icon" />
         </Link>
-        <Link to="/tools" className="icon-link">
+        <Link to="/SkillsAndTools" className="icon-link">
           <RiBrain2Line className="icon" />
         </Link>
         <Link to="/experience" className="icon-link">

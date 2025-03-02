@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import { TbArrowRightCircle } from "react-icons/tb";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import SkillsAndTools from '../pages/SkillsAndTools'
 
 const Home = () => {
   return (
@@ -37,6 +38,8 @@ const Home = () => {
       {/* Projects Section yahan add kiya */}
       <Projects />
       <Experience />
+      <SkillsAndTools />
+
     </div>
   );
 };

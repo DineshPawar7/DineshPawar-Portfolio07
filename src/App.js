@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
-import Blogs from './pages/Blogs';
-import ContactUs from './pages/ContactUs';
+import Youtube from './pages/Youtube';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Card from './components/Card';
@@ -26,8 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/SkillsAndTools" element={<SkillsAndTools />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/youtube" element={<Youtube />} />
           </Routes>
         </div>
       </div>

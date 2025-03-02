@@ -91,10 +91,9 @@
   }
   
 
-  /* Tablet View (1 column on small screens) */
   @media screen and (max-width: 768px) {
     .projects-container {
-      grid-template-columns: 1fr; /* Single Column */
+      grid-template-columns: 1fr;
       max-width: 600px;
     }
   

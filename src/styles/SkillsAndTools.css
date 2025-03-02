@@ -4,9 +4,9 @@
   padding: 20px;
   border-radius: 10px;
   color: white;
+  margin-bottom: 50px;
   
   /* Center align the whole section */
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -15,7 +15,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1;
-  text-align: center;
+  text-align: start;
 }
 
 .skills-tools-yellow {
@@ -24,7 +24,7 @@
 
 .skills-tools-wrapper {
   display: flex;
-  justify-content: center; /* Centers the content */
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
   width: 100%;
@@ -35,7 +35,6 @@
   width: 48%;
 }
 
-/* Center align the text inside skills and tools sections */
 .skills-title, 
 .tools-title {
   text-align: center;
@@ -46,7 +45,6 @@
   display: inline-block;
 }
 
-/* Optional: To make sure item lists inside each section are centered */
 .skills-list,
 .tools-list {
   display: flex;
@@ -55,7 +53,6 @@
   gap: 10px;
 }
 
-/* Common Card Styles */
 .skills-item, 
 .tools-item {
   display: flex;
@@ -70,7 +67,6 @@
   box-shadow: 0 2px 4px rgba(255, 255, 0, 0.2);
 }
 
-/* Icons Styling */
 .skills-icon, 
 .tools-icon {
   font-size: 24px;
@@ -86,12 +82,12 @@
 @media screen and (max-width: 1100px) {
   .skills-tools-wrapper {
     flex-direction: row;
-    gap: 20px; /* Yeh gap kam kar diya */
+    gap: 20px;
   }
 
   .skills-section, 
   .tools-section {
-    width: 30%; /* Pehle 80% tha, ab evenly divide kar diya */
+    width: 30%;
   }
   
 }
@@ -104,12 +100,12 @@
 
   .skills-tools-wrapper {
     flex-direction: row;
-    gap: 20px; /* Yeh gap kam kar diya */
+    gap: 20px;
   }
 
   .skills-section, 
   .tools-section {
-    width: 30%; /* Pehle 80% tha, ab evenly divide kar diya */
+    width: 30%;
   }
   
 }
@@ -129,3 +125,12 @@
   box-shadow: 0 2px 4px rgba(255, 255, 0, 0.2);
 }
 }
+
+@media screen and (max-width: 480px) {
+  .skills-tools-heading {
+    
+    text-align: center;
+  }
+
+}
+

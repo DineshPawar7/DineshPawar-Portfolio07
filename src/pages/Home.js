@@ -4,6 +4,7 @@ import { TbArrowRightCircle } from "react-icons/tb";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import SkillsAndTools from '../pages/SkillsAndTools'
+import YouTube from "./Youtube";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
       <Projects />
       <Experience />
       <SkillsAndTools />
+      <YouTube />
 
     </div>
   );

@@ -1,5 +1,5 @@
 # 🚀 Dinesh Pawar Portfolio Website  
-A fully responsive **Portfolio Website** built with **React.js** featuring **YouTube API integration**, smooth animations, and modern UI design.  
+A fully responsive **Portfolio Website** built with **React.js** featuring **YouTube Video Fetching**, smooth animations, and modern UI design.  
 
 🔹 **Live Demo:** [https://dinesh-pawar.netlify.app/]  
 🔹 **GitHub Repo:** [https://github.com/DineshPawar7/DineshPawar-Portfolio07]  

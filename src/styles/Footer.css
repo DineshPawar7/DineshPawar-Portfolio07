@@ -1,6 +1,5 @@
 .footer-container {
     width: 100%;
-    background: #1a1a1a;
     color: white;
     text-align: center;
     padding: 30px 0;
@@ -25,7 +24,7 @@
   .footer-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 600px;
   }
   

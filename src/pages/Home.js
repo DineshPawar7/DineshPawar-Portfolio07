@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import SkillsAndTools from '../pages/SkillsAndTools'
 import YouTube from "./Youtube";
+import Contact from './Contact';
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Home = () => {
       <Experience />
       <SkillsAndTools />
       <YouTube />
+      <Contact />
 
     </div>
   );

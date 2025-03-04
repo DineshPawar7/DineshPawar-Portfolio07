@@ -6,6 +6,7 @@ import { IoFolderOpenOutline } from "react-icons/io5";
 import { RiBrain2Line } from "react-icons/ri";
 import { TbBrandYoutubeKids } from "react-icons/tb";
 import { MdWorkOutline } from "react-icons/md";
+import { CiMail } from "react-icons/ci";
 
 
 
@@ -28,6 +29,9 @@ const Header = () => {
         </Link>
         <Link to="/youtube" className="icon-link">
           <TbBrandYoutubeKids className="icon" />
+        </Link>
+        <Link to="/contact" className="icon-link">
+          <CiMail className="icon" />
         </Link>
         
       </div>

@@ -8,11 +8,9 @@ import YouTube from "./Youtube";
 import Contact from "./Contact";
 
 const Home = () => {
-  // Contact section ke liye reference create karein
   const contactRef = useRef(null);
   const ProjectsRef = useRef(null);
 
-  // Scroll function jo Contact section tak le jayega
   const scrollToContact = () => {
     if (contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: "smooth" });
@@ -58,7 +56,6 @@ const Home = () => {
         </div>
 
         <div className="home-buttons">
-          {/* Button jo Contact section tak scroll karega */}
           <button className="home-connect-btn" onClick={scrollToContact}>
             Let's Connect
           </button>
@@ -68,14 +65,10 @@ const Home = () => {
           
         </div>
       </div>
-
-      {/* Projects Section */}
       <Projects />
       <Experience />
       <SkillsAndTools />
       <YouTube />
-
-      {/* Contact section ko reference pass karein */}
       <div ref={contactRef}>
         <Contact />
       </div>

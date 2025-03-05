@@ -1,9 +1,8 @@
 import React from "react";
 import "../styles/SkillsAndTools.css";
 import { FaCode, FaReact, FaNodeJs, FaFigma, FaGitAlt, FaGithub  } from "react-icons/fa"; 
-import { RiJavascriptFill, RiNextjsFill, RiAngularjsFill } from "react-icons/ri";
+import { RiJavascriptFill, RiNextjsFill, RiAngularjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb, SiTypescript, SiPostman, SiExpress } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandRedux } from "react-icons/tb";
 import { GrGraphQl } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
@@ -44,7 +43,6 @@ const SkillsAndTools = () => {
         <span className="skills-tools-yellow">TECHNOLOGIES</span>
       </h2>
 
-      {/* Skills & Tools Wrapper */}
       <div className="skills-tools-wrapper">
         {/* Skills Section */}
         <div className="skills-section">

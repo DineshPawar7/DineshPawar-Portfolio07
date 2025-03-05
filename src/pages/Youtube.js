@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import '../styles/Youtube.css'
 
 const YouTubeRSS = () => {
-    const CHANNEL_ID = "UC_S7S1AedqcIV7bcEvXcqRA"; // Tumhara actual Channel ID
+    const CHANNEL_ID = "UC_S7S1AedqcIV7bcEvXcqRA";
     const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
 
     const [videos, setVideos] = useState([]);
@@ -10,12 +10,10 @@ const YouTubeRSS = () => {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                // RSS feed ko JSON me convert karne ke liye ek third-party API ka use kar rahe hain
                 const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`);
                 const data = await response.json();
 
                 if (data.items) {
-                    // Sirf first 4 videos lene ke liye slice(0, 4) use kiya
                     setVideos(data.items.slice(0, 4));
                 }
             } catch (error) {
@@ -31,7 +29,6 @@ const YouTubeRSS = () => {
             <h2 className="youtube-heading">LATEST YOUTUBE <span>VIDEOS</span></h2>
             <div className="youtube-videoGrid">
                 {videos.map((video) => {
-                    // Video URL se video ID nikalne ka tareeka
                     const videoId = video.link.split("v=")[1]?.split("&")[0];
 
                     return (

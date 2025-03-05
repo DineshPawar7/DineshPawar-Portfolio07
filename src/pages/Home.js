@@ -1,49 +1,84 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/Home.css";
 import { TbArrowRightCircle } from "react-icons/tb";
 import Projects from "./Projects";
 import Experience from "./Experience";
-import SkillsAndTools from '../pages/SkillsAndTools'
+import SkillsAndTools from "../pages/SkillsAndTools";
 import YouTube from "./Youtube";
-import Contact from './Contact';
+import Contact from "./Contact";
 
 const Home = () => {
+  // Contact section ke liye reference create karein
+  const contactRef = useRef(null);
+  const ProjectsRef = useRef(null);
+
+  // Scroll function jo Contact section tak le jayega
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToProjects = () => {
+    if (ProjectsRef.current) {
+      ProjectsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="home-container">
       <div className="home-content">
         <h1>FULL STACK</h1>
-        <h1>WEB <span>DEVELOPER</span></h1>
-        <h3>Passionate MERN stack developer with expertise in both frontend and backend, crafting scalable and efficient solutions.</h3>
-        
+        <h1>
+          WEB <span>DEVELOPER</span>
+        </h1>
+        <h3>
+          Passionate MERN stack developer with expertise in both frontend and
+          backend, crafting scalable and efficient solutions.
+        </h3>
+
         <div className="home-stats">
           <div className="home-stat-item">
             <h1>+1.8</h1>
-            <p>YEARS OF <span className='state-item-home'>HANDS-ON EXPERIENCE</span></p>
+            <p>
+              YEARS OF <span className="state-item-home">HANDS-ON EXPERIENCE</span>
+            </p>
           </div>
           <div className="home-stat-item">
             <h1>+04</h1>
-            <p>PROJECTS <span className='state-item-home'>COMPLETED</span></p>
+            <p>
+              PROJECTS <span className="state-item-home">COMPLETED</span>
+            </p>
           </div>
           <div className="home-stat-item">
             <h1>+01</h1>
-            <p>Open Source <span className='state-item-home'>Contribution</span></p>
+            <p>
+              Open Source <span className="state-item-home">Contribution</span>
+            </p>
           </div>
         </div>
-        
 
-        <div className='home-buttons'>
-          <button className='home-connect-btn'>Let's Connect</button>
-          <button className='home-mywork-btn'>My Work <span><TbArrowRightCircle /></span></button>
+        <div className="home-buttons">
+          {/* Button jo Contact section tak scroll karega */}
+          <button className="home-connect-btn" onClick={scrollToContact}>
+            Let's Connect
+          </button>
+          <button className="home-mywork-btn" onClick={scrollToProjects}>
+            Let's Connect <span><TbArrowRightCircle /></span>
+          </button>
+          
         </div>
       </div>
 
-      {/* Projects Section yahan add kiya */}
+      {/* Projects Section */}
       <Projects />
       <Experience />
       <SkillsAndTools />
       <YouTube />
-      <Contact />
 
+      {/* Contact section ko reference pass karein */}
+      <div ref={contactRef}>
+        <Contact />
+      </div>
     </div>
   );
 };

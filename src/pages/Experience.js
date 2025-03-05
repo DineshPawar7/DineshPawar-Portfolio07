@@ -6,12 +6,14 @@ const Experience = () => {
   const experiences = [
     {
       title: "Full Stack Web Developer (Intern)",
+      company: "Koshank Pvt Ltd ",
       description:
         "Developed a responsive company website for Koshank with API integration, ensuring a seamless user experience. Also contributed to client projects, collaborating with the team on various web development tasks.",
       period: "Feb 2025 - Present",
     },
     {
       title: "Freelancer and Self-Learner",
+      // company: "empty",
       description:
         "Self-taught Full Stack Web Developer, delivering innovative solutions through freelancing and continuous learning.",
       period: "July 2023 - Present",
@@ -33,13 +35,14 @@ const Experience = () => {
   );
 };
 
-const ExperienceCard = ({ title, description, period }) => {
+const ExperienceCard = ({ title,company, description, period }) => {
   return (
     <div className="experience-card">
       <div className="arrow-container">
         <FaArrowRightLong className="arrow" />
       </div>
       <h3>{title}</h3>
+      <h2 className="companny-name">{company}</h2>
       <p>{description}</p>
       <p className="period">{period}</p>
     </div>

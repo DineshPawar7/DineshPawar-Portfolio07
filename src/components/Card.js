@@ -18,7 +18,7 @@ const Card = () => {
         <div className="card-footer">
           <a href='/contact'>
           <button className="btn-letstalk">Let's Connect</button>
-          </a>
+          </a> 
           
           <div className="social-icons">
             <a href="https://www.instagram.com/_devx.io/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaInstagram /></a>

@@ -1,9 +1,16 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import "../styles/Experience.css"; // Import CSS
+import "../styles/Experience.css";
 
 const Experience = () => {
   const experiences = [
+    {
+      title: "Web Developer (Part Time)",
+      company: "Viarsh Technologies",
+      description:
+        "Developing responsive websites and web apps, collaborating with the team to deliver high-quality solutions.",
+      period: "March 2025 - Present",
+    },
     {
       title: "Full Stack Web Developer (Intern)",
       company: "Koshank Pvt Ltd ",
@@ -11,13 +18,7 @@ const Experience = () => {
         "Developed a responsive company website for Koshank with API integration, ensuring a seamless user experience. Also contributed to client projects, collaborating with the team on various web development tasks.",
       period: "Feb 2025 - Present",
     },
-    {
-      title: "Freelancer and Self-Learner",
-      // company: "empty",
-      description:
-        "Self-taught Full Stack Web Developer, delivering innovative solutions through freelancing and continuous learning.",
-      period: "July 2023 - Present",
-    },
+    
   ];
 
   return (

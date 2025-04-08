@@ -38,7 +38,7 @@ const Contact = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-contact">
-          <h3>Contact Me</h3>
+          <h2><span>CONTACT</span> ME</h2>
           <form className="footer-form" onSubmit={handleSubmit}>
             <input
               type="text"

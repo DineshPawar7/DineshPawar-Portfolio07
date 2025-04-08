@@ -16,7 +16,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    
+     
     
   }
   
@@ -45,6 +45,7 @@
     margin: 5px;
   }
   
+  
   .btn-letstalk {
     background-color: var(--primary-color);
     color: white;
@@ -56,11 +57,45 @@
     transition: background-color 0.3s ease;
     margin-bottom: 15px;
     margin-top: 50px;
+ }
+ 
+ .btn-letstalk:hover {
+  animation: shake3856 0.3s linear infinite both;
+ }
+ 
+ @keyframes shake3856 {
+  0% {
+   -webkit-transform: translate(0);
+   transform: translate(0);
   }
-  
-  .btn-letstalk:hover {
-    background-color: var(--animation);
+ 
+  20% {
+   -webkit-transform: translate(-2px, 2px);
+   transform: translate(-2px, 2px);
   }
+ 
+  40% {
+   -webkit-transform: translate(-2px, -2px);
+   transform: translate(-2px, -2px);
+  }
+ 
+  60% {
+   -webkit-transform: translate(2px, 2px);
+   transform: translate(2px, 2px);
+  }
+ 
+  80% {
+   -webkit-transform: translate(2px, -2px);
+   transform: translate(2px, -2px);
+  }
+ 
+  100% {
+   -webkit-transform: translate(0);
+   transform: translate(0);
+  }
+ }
+ 
+
   
   .social-icons {
     display: flex;
@@ -143,6 +178,7 @@
       height: 560px;
       min-height: 560px;
       max-height: 560px;
+      padding: 40px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -154,6 +190,7 @@
       height: 62vw;
       border-radius: 20px;
       object-fit: cover;
+
       flex-shrink: 0;
     }
   

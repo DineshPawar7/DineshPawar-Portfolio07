@@ -7,6 +7,8 @@ import { RiBrain2Line } from "react-icons/ri";
 import { TbBrandYoutubeKids } from "react-icons/tb";
 import { MdWorkOutline } from "react-icons/md";
 import { CiMail } from "react-icons/ci";
+import { PiStudentBold } from "react-icons/pi";
+
 
 
 
@@ -26,6 +28,9 @@ const Header = () => {
         </Link>
         <Link to="/experience" className="icon-link">
           <MdWorkOutline className="icon" />
+        </Link>
+        <Link to="/education" className="icon-link">
+          <PiStudentBold className="icon" />
         </Link>
         <Link to="/youtube" className="icon-link">
           <TbBrandYoutubeKids className="icon" />

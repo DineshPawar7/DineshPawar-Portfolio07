@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import SkillsAndTools from "../pages/SkillsAndTools";
 import YouTube from "./Youtube";
 import Contact from "./Contact";
+import Education from "./Education";
 
 const Home = () => {
   const contactRef = useRef(null);
@@ -60,18 +61,22 @@ const Home = () => {
             Let's Connect
           </button>
           <button className="home-mywork-btn" onClick={scrollToProjects}>
-            Let's Connect <span><TbArrowRightCircle /></span>
+           See Work <span><TbArrowRightCircle /></span>
           </button>
           
         </div>
       </div>
-      <Projects />
+      <div ref={ProjectsRef}>
+        <Projects />
+      </div>
       <Experience />
+      <Education />
       <SkillsAndTools />
       <YouTube />
       <div ref={contactRef}>
         <Contact />
       </div>
+      
     </div>
   );
 };

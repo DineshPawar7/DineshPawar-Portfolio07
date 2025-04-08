@@ -1,5 +1,6 @@
 .youtube-section {
     padding: 20px;
+    margin-top: 50px;
 }
 
 .youtube-heading {
@@ -50,6 +51,18 @@
             margin: 0 auto;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .youtube-heading{
+            font-size: 12vw;
+        }
+    
+       
+        
+    
+    
+  
+  }
     
     
 

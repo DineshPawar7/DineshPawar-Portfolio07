@@ -4,6 +4,7 @@
   margin-bottom: 50px;
   color: #ffffff;
   line-height: 0.9;
+  margin-top: 70px;
 }
 
 .experience-heading span {
@@ -11,12 +12,12 @@
 }
 
 /* Experience Container */
+
 .experience-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  margin-bottom: 50px;
 }
 .companny-name{
   color: var(--primary-color);

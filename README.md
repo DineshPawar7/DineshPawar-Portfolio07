@@ -6,6 +6,13 @@ A fully responsive **Portfolio Website** built with **React.js** featuring **You
 
 ---
 
+## 🙏 Acknowledgements  
+Special thanks to the creators of the stunning designs that inspired this project:
+
+🎨 **[Sawad's Portfolio](https://sawad.framer.website/)**  🎨 **[Seera's Portfolio](https://seera.framer.website/)**
+
+---
+
 ## ✨ Features  
 ✅ **YouTube API Integration** – Latest videos auto-fetch  
 ✅ **React.js Hooks** – Efficient & fast rendering  
@@ -26,9 +33,11 @@ A fully responsive **Portfolio Website** built with **React.js** featuring **You
 
 ---
 
+
 ## 📥 Installation  
 ```bash
 git clone https://github.com/DineshPawar7/DineshPawar-Portfolio07.git  
 cd DineshPawar-Portfolio07  
 npm install  
 npm start  
+

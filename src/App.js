@@ -10,11 +10,14 @@ import Card from './components/Card';
 import SkillsAndTools from './pages/SkillsAndTools';
 import Contact from './pages/Contact';
 import Education from './pages/Education';
+import Testimonials from './pages/Testimonials';
+import Button from './pages/Button';
 
 function App() {
   return (
     <Router>
       <Header />
+      <Button />
 
       <div className="app-main-section">
         <div className="left-card">
@@ -30,6 +33,7 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/youtube" element={<Youtube />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/testimonials" element={<Testimonials />} />
           </Routes>
         </div>
       </div>

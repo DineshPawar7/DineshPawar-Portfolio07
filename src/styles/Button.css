@@ -1,0 +1,23 @@
+.testimonials-btn {
+    position: fixed;
+    font-weight: bold;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .testimonials-btn a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimonials-btn a:hover {
+    background-color: var(--animation);
+  }
+  

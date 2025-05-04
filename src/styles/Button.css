@@ -17,7 +17,6 @@
     transition: background-color 0.3s ease;
   }
   
-  .testimonials-btn a:hover {
-    background-color: var(--animation);
+  .testimonials-btn a:hover {    background-color: var(--animation);
   }
   

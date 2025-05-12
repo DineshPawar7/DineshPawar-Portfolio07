@@ -16,7 +16,7 @@ const Experience = () => {
       company: "Koshank Pvt Ltd ",
       description:
         "Developed a responsive company website for Koshank with API integration, ensuring a seamless user experience. Also contributed to client projects, collaborating with the team on various web development tasks.",
-      period: "Feb 2025 - Present",
+      period: "Feb 2025 - May 2025",
     },
     
   ];

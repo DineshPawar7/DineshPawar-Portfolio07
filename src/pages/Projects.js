@@ -10,7 +10,7 @@ import AnimatedButton from "../components/AnimatedButton";
 
 const projectsData = [
   {
-    id: 4,
+    id: 1,
     title: "Nxtkisan",
     description: "NxtKisan is an AI-powered platform for Indian farmers (Under Development)",
     github: "https://github.com/DineshPawar7/nxtkisan-client",
@@ -18,7 +18,7 @@ const projectsData = [
     img: Nxtkisan,
   },
   {
-    id: 3,
+    id: 2,
     title: "ArchitectureMart",
     description: "Home Architecture Plans Selling Website for modern and custom designs",
     github: "https://github.com/DineshPawar7/architectureMart",
@@ -26,7 +26,7 @@ const projectsData = [
     img: Archmart,
   },
   {
-    id: 1,
+    id: 3,
     title: "Koshank Portfolio",
     description: "Koshank Official Website for updates, services, and brand information",
     github: "https://github.com/DineshPawar7/koshank-portfolio",
@@ -34,13 +34,15 @@ const projectsData = [
     img: Koshank,
   },
   {
-    id: 2,
+    id: 4,
     title: "AI Text to Speech",
-    description: "AI-Powered Voice Synthesis for realistic and human-like speech",
-    github: "https://github.com/DineshPawar7/Text-to-Speech-App",
-    live: "https://ai-text-to-speech-app.netlify.app/",
+    description: "A personal agency website to showcase my freelance portfolio",
+    github: "https://github.com/DineshPawar7/MernEnginners",
+    live: "https://mernengineers.netlify.app",
     img: TTS,
   },
+
+  
 ];
 
 const Projects = () => {

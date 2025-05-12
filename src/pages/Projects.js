@@ -3,7 +3,7 @@ import "../styles/Project.css";
 import Koshank from "../assets/koshank.png";
 import Nxtkisan from "../assets/nxtkisan.png";
 import Archmart from "../assets/archmart.png";
-import TTS from "../assets/tts.png";
+import MERN from "../assets/mernEngineers.png";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import AnimatedButton from "../components/AnimatedButton";
@@ -39,7 +39,7 @@ const projectsData = [
     description: "A personal agency website to showcase my freelance portfolio",
     github: "https://github.com/DineshPawar7/MernEnginners",
     live: "https://mernengineers.netlify.app",
-    img: TTS,
+    img: MERN,
   },
 
   

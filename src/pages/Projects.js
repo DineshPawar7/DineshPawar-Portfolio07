@@ -35,7 +35,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "AI Text to Speech",
+    title: "MERN Engineers",
     description: "A personal agency website to showcase my freelance portfolio",
     github: "https://github.com/DineshPawar7/MernEnginners",
     live: "https://mernengineers.netlify.app",

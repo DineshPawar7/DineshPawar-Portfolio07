@@ -48,7 +48,7 @@
   
   .btn-letstalk {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -61,6 +61,8 @@
  
  .btn-letstalk:hover {
   animation: shake3856 0.3s linear infinite both;
+  background-color: var(--animation);
+  color: white;
  }
  
  @keyframes shake3856 {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Footer.css";
+import HeroTitle from "../components/ui/HeroTitle";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +39,11 @@ const Contact = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-contact">
-          <h2><span>CONTACT</span> ME</h2>
+
+          <HeroTitle
+        topText="CONTACT"
+        highlightText="ME"
+      />
           <form className="footer-form" onSubmit={handleSubmit}>
             <input
               type="text"

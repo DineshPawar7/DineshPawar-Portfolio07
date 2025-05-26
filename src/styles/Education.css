@@ -9,6 +9,7 @@
   
   .education-heading span {
     color: var(--primary-color);
+    
   }
   
   .education-container {
@@ -25,8 +26,7 @@
   }
   
   .education-card:hover .institution-name {
-    color: #e5e5e5;
-    -webkit-text-stroke: 0.5px black;
+    color: var(--animation);
   }
   
   .education-card {
@@ -43,6 +43,7 @@
   .education-card:hover {
     transform: scale(1.02);
     background-color: var(--primary-color);
+    
   }
   
   .arrow-container {
@@ -76,6 +77,12 @@
   .education-card h3 {
     font-size: 24px;
     color: #ffffff;
+  }
+    .education-card:hover h3 {
+    color: black;
+  }
+  .education-card:hover p {
+    color: black;
   }
   
   .education-card p {

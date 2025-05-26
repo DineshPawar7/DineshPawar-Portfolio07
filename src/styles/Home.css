@@ -80,13 +80,15 @@
     background-color: var(--primary-color);
     padding: 13px 25px;
     border-radius: 8px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 15px;
   }
 
   
  .home-connect-btn:hover {
   animation: shake3856 0.3s linear infinite both;
+  background-color: var(--animation);
+  color: rgb(255, 255, 255);
  }
  
  @keyframes shake3856 {

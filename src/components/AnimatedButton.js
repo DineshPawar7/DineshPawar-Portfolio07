@@ -4,7 +4,7 @@ import "../styles/AnimatedButton.css";
 const AnimatedButton = ({ label, icon, href }) => {
   return (
     <a
-      href={href}
+      href={href} 
       target="_blank"
       rel="noopener noreferrer"
       className="save-btn-wrapper"

@@ -24,7 +24,7 @@ function App() {
           <Card />
         </div>
 
-        <div className="right-components">
+        <div className="right-components mainBg">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

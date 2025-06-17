@@ -7,6 +7,7 @@ import SkillsAndTools from "../pages/SkillsAndTools";
 import YouTube from "./Youtube";
 import Contact from "./Contact";
 import Education from "./Education";
+import GithubCalendar from "./GithubCalendar";
 
 const Home = () => {
   const contactRef = useRef(null);
@@ -72,6 +73,7 @@ const Home = () => {
       <Experience />
       <Education />
       <SkillsAndTools />
+      <GithubCalendar />
       <YouTube />
       <div ref={contactRef}>
         <Contact />

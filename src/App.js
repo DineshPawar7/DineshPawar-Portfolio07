@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Education from './pages/Education';
 import Testimonials from './pages/Testimonials';
 import Button from './pages/Button';
+import GithubCalendar from './pages/GithubCalendar';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/SkillsAndTools" element={<SkillsAndTools />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/github" element={<GithubCalendar />} />
             <Route path="/youtube" element={<Youtube />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/testimonials" element={<Testimonials />} />

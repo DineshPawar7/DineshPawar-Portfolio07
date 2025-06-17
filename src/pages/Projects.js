@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Project.css";
 import Whyral from "../assets/whyral.png";
-import Nxtkisan from "../assets/nxtkisan.png";
+import invitewow from "../assets/inviteWOW.png";
 import Archmart from "../assets/archmart.png";
 import MERN from "../assets/mernEngineers.png";
 import { FaGithub } from "react-icons/fa";
@@ -14,18 +14,18 @@ const projectsData = [
     title: "Whyral.ai",
     description:
       "AI-powered MERN stack web app for content creators.",
-    github: "https://github.com/DineshPawar7/koshank-portfolio",
-    live: "https://koshank-testing.netlify.app/",
+    github: "https://github.com/DineshPawar7/whyral.ai",
+    live: "https://whyral-ai.vercel.app/",
     img: Whyral,
   },
   {
     id: 2,
-    title: "Nxtkisan",
+    title: "InviteWOW",
     description:
-      "NxtKisan is an AI-powered platform for Indian farmers (Under Development)",
-    github: "https://github.com/DineshPawar7/nxtkisan-client",
-    live: "https://nxtkisan.vercel.app/",
-    img: Nxtkisan,
+      "Pre-built customizable templates for every occasion",
+    github: "https://github.com/DineshPawar7/invitewow",
+    live: "https://github.com/DineshPawar7/invitewow",
+    img: invitewow,
   },
   {
     id: 3,

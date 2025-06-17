@@ -4,6 +4,8 @@ import Whyral from "../assets/whyral.png";
 import invitewow from "../assets/inviteWOW.png";
 import Archmart from "../assets/archmart.png";
 import MERN from "../assets/mernEngineers.png";
+import CRM from "../assets/crm.png";
+
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import AnimatedButton from "../components/AnimatedButton";
@@ -44,6 +46,12 @@ const projectsData = [
     github: "https://github.com/DineshPawar7/MernEnginners",
     live: "https://mernengineers.netlify.app",
     img: MERN,
+  },
+  {
+    id: 5,
+    title: "CRM Project (Freelance)",
+    description: "Build an entire CMS frontend for the client",
+    img: CRM,
   },
 ];
 

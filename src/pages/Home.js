@@ -38,9 +38,9 @@ const Home = () => {
 
         <div className="home-stats">
           <div className="home-stat-item">
-            <h1>+1.8</h1>
+            <h1>+06</h1>
             <p>
-              YEARS OF <span className="state-item-home">HANDS-ON EXPERIENCE</span>
+              Months OF <span className="state-item-home">EXPERIENCE</span>
             </p>
           </div>
           <div className="home-stat-item">

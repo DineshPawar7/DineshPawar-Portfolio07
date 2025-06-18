@@ -13,6 +13,7 @@ import Education from './pages/Education';
 import Testimonials from './pages/Testimonials';
 import Button from './pages/Button';
 import GithubCalendar from './pages/GithubCalendar';
+import Resume from './pages/Resume';
 
 function App() {
   return (
@@ -36,8 +37,11 @@ function App() {
             <Route path="/youtube" element={<Youtube />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/resume" element={<Resume />} />
+
           </Routes>
         </div>
+        
       </div>
 
       <Footer />

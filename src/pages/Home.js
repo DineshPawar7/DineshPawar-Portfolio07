@@ -13,11 +13,7 @@ const Home = () => {
   const contactRef = useRef(null);
   const ProjectsRef = useRef(null);
 
-  const scrollToContact = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+ 
   const scrollToProjects = () => {
     if (ProjectsRef.current) {
       ProjectsRef.current.scrollIntoView({ behavior: "smooth" });
@@ -58,9 +54,13 @@ const Home = () => {
         </div>
 
         <div className="home-buttons">
-          <button className="home-connect-btn" onClick={scrollToContact}>
-            Let's Connect
-          </button>
+          <button
+  className="home-connect-btn"
+  onClick={() => window.location.href = 'https://dinesh-pawar.netlify.app/Dinesh-Pawar-Resume.pdf'}
+>
+  See Resume
+</button>
+
           <button className="home-mywork-btn" onClick={scrollToProjects}>
            See Work <span><TbArrowRightCircle /></span>
           </button>

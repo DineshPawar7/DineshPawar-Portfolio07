@@ -52,7 +52,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-            />
+            /> 
             <input
               type="email"
               name="email"

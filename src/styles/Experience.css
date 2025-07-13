@@ -11,7 +11,6 @@
   color: var(--primary-color);
 }
 
-/* Experience Container */
 
 .experience-container {
   display: flex;
@@ -38,8 +37,8 @@
   
 }
 .experience-card {
-  width: 700px;
-  background: rgb(39, 40, 41);
+  width: auto;
+  background: var(--card-bg-color);
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -81,7 +80,6 @@
   color: black;
 }
 
-/* Card Content */
 .experience-card h3 {
   font-size: 24px;
   color: #ffffff;
@@ -109,7 +107,6 @@
 
 }
 
-/* Responsive Styling */
 @media screen and (max-width: 768px) {
   .experience-heading {
     font-size: 12vw;

@@ -8,8 +8,11 @@
 
 :root {
   --primary-color: #93e01d;
-  --bg: #101112;
+  --bg: #000000;
   --animation: #c35e00;
+  --text-color: #c9d1d9;
+  --card-bg-color: #1e293b80; 
+  --card-border-color: rgba(56, 66, 82, 0.6);
 }
 
 body {
@@ -28,7 +31,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   height: auto;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   gap: 40px;
   padding-top: 20px;

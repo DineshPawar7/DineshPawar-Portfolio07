@@ -1,76 +1,66 @@
 import React from "react";
 import "../styles/SkillsAndTools.css";
-import { FaCode, FaReact, FaNodeJs, FaFigma, FaGitAlt, FaGithub  } from "react-icons/fa"; 
-import { RiJavascriptFill, RiNextjsFill, RiAngularjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb, SiTypescript, SiPostman, SiExpress } from "react-icons/si";
-import { TbBrandRedux } from "react-icons/tb";
-import { GrGraphQl } from "react-icons/gr";
+
+
+import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaDocker, FaGithub, FaAngular, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiJavascript, SiMongodb, SiTypescript, SiPostman, SiExpress, SiNextdotjs, SiRedis, SiTailwindcss, SiGraphql, SiRedux } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+const skillData = {
+  "Languages & Markup": [
+    { name: "JavaScript (ES6+)", icon: <SiJavascript /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "HTML5", icon: <FaHtml5 /> },
+    { name: "CSS3", icon: <FaCss3Alt /> },
+  ],
+  "Frameworks & Libraries": [
+    { name: "React", icon: <FaReact /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Express.js", icon: <SiExpress /> },
+    { name: "Angular", icon: <FaAngular /> },
+    { name: "Redux", icon: <SiRedux /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  ],
+  "Databases & APIs": [
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "GraphQL", icon: <SiGraphql /> },
+    { name: "Postman", icon: <SiPostman /> },
+    { name: "Redis", icon: <SiRedis /> },
+  ],
+  "Tools & Platforms": [
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "GitHub", icon: <FaGithub /> },
+    { name: "VS Code", icon: <VscVscode /> },
+    { name: "Figma", icon: <FaFigma /> },
+    { name: "Docker", icon: <FaDocker /> },
+  ],
+};
 
 const SkillsAndTools = () => {
-  const skills = [
-    { name: "React", icon: <FaReact /> },
-    { name: "Node.js", icon: <FaNodeJs /> },
-    { name: "JavaScript", icon: <RiJavascriptFill /> },
-    { name: "HTML & CSS", icon: <FaCode /> },
-    { name: "NextJS", icon: <RiNextjsFill /> },
-    { name: "Angular", icon: <RiAngularjsFill /> },
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
-    { name: "ExpressJS", icon: <SiExpress /> },
-    { name: "Redux", icon: <TbBrandRedux /> },
-    { name: "GraphQL", icon: <GrGraphQl /> },
-
-  ];
-
-  const tools = [
-    { name: "Git", icon: <FaGitAlt /> },
-    { name: "Github", icon: <FaGithub /> },
-    { name: "VSCode", icon: <VscVscode /> },
-    { name: "Postman", icon: <SiPostman /> },
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "Figma", icon: <FaFigma /> },
-    
-  ];
-
   return (
-    <div className="skills-tools-container">
-      {/* Heading */}
-      <h2 className="skills-tools-heading">
-        <span>TOOLS &</span> <br />
-        <span className="skills-tools-yellow">TECHNOLOGIES</span>
-      </h2>
+    <section id="skills" className="skillset-container">
+      <h1 className="skillset-heading">
+        TOOLS & <span className="highlight-text">TECHNOLOGIES</span>
+      </h1>
+     
 
-      <div className="skills-tools-wrapper">
-        {/* Skills Section */}
-        <div className="skills-section">
-          <h3 className="skills-title">Skills</h3>
-          <div className="skills-list">
-            {skills.map((skill, index) => (
-              <div key={index} className="skills-item">
-                <span className="skills-icon">{skill.icon}</span>
-                <span className="skills-name">{skill.name}</span>
-              </div>
-            ))}
+      <div className="skill-categories-grid">
+        {Object.entries(skillData).map(([category, items]) => (
+          <div className="skill-category-section" key={category}>
+            <h3 className="category-title">{category}</h3>
+            <div className="icon-grid">
+              {items.map((item) => (
+                <div className="item-card" key={item.name}>
+                  <div className="icon">{item.icon}</div>
+                  <p className="label">{item.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-
-        {/* Tools Section */}
-        <div className="tools-section">
-          <h3 className="tools-title">Tools</h3>
-          <div className="tools-list">
-            {tools.map((tool, index) => (
-              <div key={index} className="tools-item">
-                <span className="tools-icon">{tool.icon}</span>
-                <span className="tools-name">{tool.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

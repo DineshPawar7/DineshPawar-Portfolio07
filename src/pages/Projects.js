@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Project.css";
 import Whyral from "../assets/whyral.png";
-import invitewow from "../assets/inviteWOW.png";
+// import invitewow from "../assets/inviteWOW.png";
 import Archmart from "../assets/archmart.png";
 import MERN from "../assets/mernEngineers.png";
 import CRM from "../assets/crm.png";

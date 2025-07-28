@@ -11,26 +11,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import AnimatedButton from "../components/AnimatedButton";
 
 const projectsData = [
-   {
+  {
     id: 1,
-    title: "Whyral.ai",
-    description:
-      "AI-powered MERN stack web app for content creators.",
-    github: "https://github.com/DineshPawar7/whyral.ai",
-    live: "https://whyral-ai.vercel.app/",
-    img: Whyral,
-  },
-  {
-    id: 2,
-    title: "InviteWOW",
-    description:
-      "Pre-built customizable templates for every occasion",
-    github: "https://github.com/DineshPawar7/invitewow",
-    live: "https://github.com/DineshPawar7/invitewow",
-    img: invitewow,
-  },
-  {
-    id: 3,
     title: "ArchitectureMart",
     description:
       "Home Architecture Plans Selling Website for modern and custom designs",
@@ -40,15 +22,34 @@ const projectsData = [
   },
 
   {
-    id: 4,
+    id: 2,
     title: "MERN Engineers",
     description: "A personal agency website to showcase my freelance portfolio",
     github: "https://github.com/DineshPawar7/MernEnginners",
     live: "https://mernengineers.netlify.app",
     img: MERN,
   },
+   {
+    id: 3,
+    title: "Whyral.ai",
+    description:
+      "AI-powered MERN stack web app for content creators.",
+    github: "https://github.com/DineshPawar7/whyral.ai",
+    live: "https://whyral-ai.vercel.app/",
+    img: Whyral,
+  },
+  // {
+  //   id: 2,
+  //   title: "InviteWOW",
+  //   description:
+  //     "Pre-built customizable templates for every occasion",
+  //   github: "https://github.com/DineshPawar7/invitewow",
+  //   live: "https://github.com/DineshPawar7/invitewow",
+  //   img: invitewow,
+  // },
+  
   {
-    id: 5,
+    id: 4,
     title: "CRM Project (Freelance)",
     description: "Build an entire CMS frontend for the client",
     img: CRM,

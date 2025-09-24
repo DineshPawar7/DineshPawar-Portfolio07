@@ -14,6 +14,7 @@ import Testimonials from './pages/Testimonials';
 import Button from './pages/Button';
 import GithubCalendar from './pages/GithubCalendar';
 import Resume from './pages/Resume';
+import About from './pages/About';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/about" element={<About />} />
 
           </Routes>
         </div>

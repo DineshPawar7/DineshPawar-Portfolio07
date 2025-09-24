@@ -21,7 +21,7 @@ const Card = () => {
           </a> 
           
           <div className="social-icons">
-            <a href="https://www.instagram.com/_devx.io/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaInstagram /></a>
+            <a href="https://www.instagram.com/dineshpawar07_/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaInstagram /></a>
             <a href="https://www.linkedin.com/in/dineshpawar07/" target="_blank" rel="noopener noreferrer" className="social-icon"><FaLinkedin /></a>
             <a href="https://www.youtube.com/@DineshPawar_.07" target="_blank" rel="noopener noreferrer" className="social-icon"><AiOutlineYoutube /></a>
             <a href="mailto:dineshpawarr07@gmail.com" target="_blank" rel="noopener noreferrer" className="social-icon"><FaEnvelope /></a>

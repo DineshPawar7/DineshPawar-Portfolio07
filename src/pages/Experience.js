@@ -5,11 +5,18 @@ import "../styles/Experience.css";
 const Experience = () => {
   const experiences = [
     {
+      title: "Frontend Developer",
+      company: "Buzdealz",
+      description:
+        "Developed and managed the complete frontend of BuzDealz, focusing on creating a fully responsive user interface and seamless integration with backend APIs. Worked on maintaining, updating, and enhancing frontend features on a regular basis to ensure smooth performance, cross-device compatibility, and an improved overall user experience.",
+      period: "July 2025 - Present",
+    },
+    {
       title: "Web Developer (Part Time)",
       company: "Viarsh Technologies",
       description:
         "Developing responsive websites and web apps, collaborating with the team to deliver high-quality solutions.",
-      period: "March 2025 - Present",
+      period: "March 2025 - July",
     },
     {
       title: "Full Stack Web Developer (Intern)",

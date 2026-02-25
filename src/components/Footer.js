@@ -1,18 +1,15 @@
 import React from "react";
-import "../styles/Footer.css";
 
 const Footer = () => {
-  
- 
-
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
+    <footer className="w-full text-white text-center py-[30px]">
+      
+      <div className="mx-auto flex flex-col items-center gap-5">
 
-        {/* Copyright */}
-        <p className='footer-copyright'>
-        &copy; 2025 <strong>Dinesh Pawar</strong>. All Rights Reserved
-      </p>
+        <p className="text-[14px] mt-[10px] text-[#aaa]">
+          &copy; 2026 <strong className="font-bold">Dinesh Pawar</strong>. All Rights Reserved
+        </p>
+        
       </div>
     </footer>
   );

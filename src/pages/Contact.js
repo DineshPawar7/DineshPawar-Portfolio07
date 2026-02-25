@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../styles/Footer.css";
-import HeroTitle from "../components/ui/HeroTitle";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,15 +34,25 @@ const Contact = () => {
   };
 
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
-        <div className="footer-contact">
+    <footer className="w-full text-white text-center py-[30px]">
+      
+      <div className="mx-auto flex flex-col items-center gap-5">
+          <h1 className="text-[clamp(2.2rem,10vw,75px)] font-bold mb-[50px] text-white leading-[0.9] mt-[70px] text-center md:text-left">
+       <span className="text-[var(--primary-color)]">CONTACT</span>
+        {" "}ME
+        
+      </h1>
+        <div className="flex flex-col items-center">
+          
+          {/* HeroTitle wrapping logic */}
+          
+         
 
-          <HeroTitle
-        topText="CONTACT"
-        highlightText="ME"
-      />
-          <form className="footer-form" onSubmit={handleSubmit}>
+
+          <form 
+            className="flex flex-col gap-5 w-[80vw] md:w-[600px] mt-5" 
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
               name="name"
@@ -52,6 +60,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
+              className="w-full p-[15px] border border-white rounded-[5px] bg-[var(--card-border-color)] text-white outline-none transition-colors hover:border-[var(--primary-color)] focus:border-[var(--primary-color)]"
             /> 
             <input
               type="email"
@@ -60,6 +69,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              className="w-full p-[15px] border border-white rounded-[5px] bg-[var(--card-border-color)] text-white outline-none transition-colors hover:border-[var(--primary-color)] focus:border-[var(--primary-color)]"
             />
             <input
               type="text"
@@ -68,6 +78,7 @@ const Contact = () => {
               value={formData.mobile}
               onChange={handleChange}
               required
+              className="w-full p-[15px] border border-white rounded-[5px] bg-[var(--card-border-color)] text-white outline-none transition-colors hover:border-[var(--primary-color)] focus:border-[var(--primary-color)]"
             />
             <textarea
               name="message"
@@ -75,9 +86,21 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               required
+              className="w-full p-[15px] border border-white rounded-[5px] bg-[var(--card-border-color)] text-white h-[80px] resize-none outline-none transition-colors hover:border-[var(--primary-color)] focus:border-[var(--primary-color)]"
             ></textarea>
-            <button type="submit">Send</button>
+            
+            <button 
+              type="submit" 
+              className="bg-[var(--primary-color)] text-black p-[10px] border-none cursor-pointer text-base rounded-[5px] transition duration-300 hover:bg-orange-500 font-medium"
+            >
+              Send
+            </button>
           </form>
+
+          {/* Copyright Text */}
+          <p className="text-[14px] mt-[10px] text-[#aaa]">
+            © {new Date().getFullYear()} All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -21,7 +21,7 @@ const YouTubeRSS = () => {
         };
 
         fetchVideos();
-    }, []); // Added dependency array [] to prevent infinite loop
+    }, [RSS_URL]); // Added dependency array [] to prevent infinite loop
 
     return (
         <section className="p-5 mt-[50px]">

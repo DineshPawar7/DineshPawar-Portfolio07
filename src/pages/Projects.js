@@ -20,11 +20,11 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "QCom.ai",
+    title: "Cloud Kitchen Website",
     description:
-      "AI-powered SaaS platform for automated e-commerce competitor monitoring and insights",
-    github: "https://github.com/DineshPawar7/Qcom.ai",
-    live: "https://qcom-ai.netlify.app",
+      "Built a responsive Cloud Kitchen website with menu and order management",
+    github: "https://github.com/DineshPawar7/cloud-kitchen-website",
+    live: "",
     img: Qcom,
   },
   {

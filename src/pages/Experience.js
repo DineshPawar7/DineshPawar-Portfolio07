@@ -8,14 +8,14 @@ const Experience = () => {
       company: "Buzdealz Pvt Ltd",
       description:
         "Developed and managed the complete frontend of BuzDealz, focusing on creating a fully responsive user interface and seamless integration with backend APIs. Worked on maintaining, updating, and enhancing frontend features on a regular basis to ensure smooth performance, cross-device compatibility, and an improved overall user experience.",
-      period: "July 2025 - Present",
+      period: "July 2025 - March 2026",
     },
     {
       title: "Web Developer (Part Time)",
       company: "Viarsh Technologies",
       description:
         "Developing responsive websites and web apps, collaborating with the team to deliver high-quality solutions.",
-      period: "March 2025 - July",
+      period: "March 2025 - July 2025",
     },
     {
       title: "Full Stack Web Developer (Intern)",

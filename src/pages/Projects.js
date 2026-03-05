@@ -1,5 +1,4 @@
 import React from "react";
-import Archmart from "../assets/archmart.png";
 import MERN from "../assets/mernEngineers.png";
 import Grohubz from "../assets/grohubz.png";
 import Qcom from "../assets/qcom.png";

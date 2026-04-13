@@ -1,7 +1,7 @@
 import React from "react";
 import { 
   FaReact, FaNodeJs, FaFigma, FaGitAlt, FaDocker, FaGithub, 
-  FaHtml5, FaCss3Alt, FaInstagram, FaFire 
+  FaHtml5, FaCss3Alt, FaFire 
 } from "react-icons/fa";
 import { 
   SiJavascript, SiMongodb, SiTypescript, SiPostman, SiExpress, 
@@ -12,75 +12,74 @@ import { VscVscode } from "react-icons/vsc";
 
 const skillData = {
   "Languages & Core": [
-    { name: "JavaScript (ES6+)", icon: <SiJavascript className="text-[var(--primary-color)]" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-[var(--primary-color)]" /> },
-    { name: "HTML5", icon: <FaHtml5 className="text-[var(--primary-color)]" /> },
-    { name: "CSS3", icon: <FaCss3Alt className="text-[var(--primary-color)]" /> },
+    { name: "JavaScript", icon: <SiJavascript /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "HTML5", icon: <FaHtml5 /> },
+    { name: "CSS3", icon: <FaCss3Alt /> },
   ],
-  "Frontend Frameworks & Libraries": [
-    { name: "React", icon: <FaReact className="text-[var(--primary-color)]" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-[var(--primary-color)]" /> },
-    { name: "Redux", icon: <SiRedux className="text-[var(--primary-color)]" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-[var(--primary-color)]" /> },
+  "Frontend & State": [
+    { name: "React", icon: <FaReact /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "Redux", icon: <SiRedux /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   ],
-  "Backend Technologies": [
-    { name: "Node.js", icon: <FaNodeJs className="text-[var(--primary-color)]" /> },
-    { name: "Express.js", icon: <SiExpress className="text-[var(--primary-color)]" /> },
-    { name: "Socket.io", icon: <SiSocketdotio className="text-[var(--primary-color)]" /> },
+  "Backend & Realtime": [
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Express.js", icon: <SiExpress /> },
+    { name: "Socket.io", icon: <SiSocketdotio /> },
   ],
-  "Databases & ORMs": [
-    { name: "MongoDB", icon: <SiMongodb className="text-[var(--primary-color)]" /> },
-    { name: "PostgreSQL", icon: <SiPostgresql className="text-[var(--primary-color)]" /> },
-    { name: "Prisma", icon: <SiPrisma className="text-[var(--primary-color)]" /> },
-    { name: "Firebase", icon: <FaFire className="text-[var(--primary-color)]" /> },
-    { name: "Redis", icon: <SiRedis className="text-[var(--primary-color)]" /> },
+  "Databases & Cloud": [
+    { name: "MongoDB", icon: <SiMongodb /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
+    { name: "Prisma", icon: <SiPrisma /> },
+    { name: "Firebase", icon: <FaFire /> },
+    { name: "Redis", icon: <SiRedis /> },
   ],
-  "APIs & Tools": [
-    { name: "Postman", icon: <SiPostman className="text-[var(--primary-color)]" /> },
-    { name: "Instagram Graph API", icon: <FaInstagram className="text-[var(--primary-color)]" /> },
-    { name: "Git", icon: <FaGitAlt className="text-[var(--primary-color)]" /> },
-  ],
-  "Development Tools": [
-    { name: "VS Code", icon: <VscVscode className="text-[var(--primary-color)]" /> },
-    { name: "Figma", icon: <FaFigma className="text-[var(--primary-color)]" /> },
-    { name: "Docker", icon: <FaDocker className="text-[var(--primary-color)]" /> },
-        { name: "GitHub", icon: <FaGithub className="text-[var(--primary-color)]" /> },
-
+  "Tools & DevOps": [
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "GitHub", icon: <FaGithub /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Postman", icon: <SiPostman /> },
+    { name: "VS Code", icon: <VscVscode /> },
+    { name: "Figma", icon: <FaFigma /> },
   ],
 };
 
 const SkillsAndTools = () => {
   return (
-    <section id="skills" className="w-full max-w-7xl mx-auto px-4 py-8 text-white">
+    <section id="skills" className="w-full px-2 mx-auto text-white">
       {/* Heading */}
-      <h1 className="text-[clamp(2.2rem,10vw,75px)] font-bold mb-[50px] text-white leading-[0.9] mt-[70px] text-center md:text-left">
-        TOOLS &{" "}
-        <span className="text-[var(--primary-color)]">TECHNOLOGIES</span>
-      </h1>
+     
 
-      {/* Skills Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] md:gap-10 text-center">
+<h2 className="text-[clamp(2.2rem,8vw,60px)] font-bold mb-6 md:mb-16 text-white leading-tight text-center md:text-left uppercase">
+       Tools & <span className="text-primary">Technologies</span>
+      </h2>
+      {/* Categories Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {Object.entries(skillData).map(([category, items]) => (
           <div
             key={category}
-            className="bg-[var(--card-bg-color)] rounded-[50px] p-5 shadow-lg"
+            className="bg-[#1a1a1a] border border-white/5 rounded-3xl p-6 md:p-8 transition-all duration-500 hover:border-primary/30"
           >
-            {/* Category Title with Underline */}
-            <h3 className="text-[clamp(1.3rem,4vw,1.6rem)] font-semibold text-white mb-[30px] pb-2.5 inline-block relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[50px] after:h-[3px] after:bg-[var(--primary-color)] after:rounded">
-              {category}
-            </h3>
+            {/* Category Title */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-[2px] w-8 bg-primary"></div>
+              <h3 className="text-xl md:text-2xl font-semibold text-white/90 tracking-wide">
+                {category}
+              </h3>
+            </div>
 
-            {/* Icons Grid */}
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(90px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(110px,1fr))] gap-[15px] sm:gap-[25px]">
+            {/* Individual Skills Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {items.map((item) => (
                 <div
                   key={item.name}
-                  className="bg-[var(--card-bg-color)] border border-[var(--card-border-color)] rounded-2xl p-[20px] sm:p-[25px] text-center backdrop-blur-md shadow-[0_8px_20px_var(--shadow-color)] transition-all duration-300 hover:translate-y-[-8px] hover:scale-105 hover:shadow-[0_12px_30px_rgba(0,170,255,0.2)] hover:border-[var(--primary-color)]"
+                  className="group flex flex-col items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/5 transition-all duration-500 ease-in-out hover:bg-primary hover:border-transparent"
                 >
-                  <div className="text-[clamp(2rem,5vw,3rem)] mb-[15px] transition-colors duration-300">
+                  <div className="text-3xl md:text-4xl text-primary group-hover:text-black transition-colors duration-500 mb-3">
                     {item.icon}
                   </div>
-                  <p className="text-[clamp(0.7rem,2.5vw,0.9rem)] font-medium text-[var(--text-color)] m-0">
+                  <p className="text-xs md:text-sm font-medium text-white/70 group-hover:text-black transition-colors duration-500 text-center">
                     {item.name}
                   </p>
                 </div>

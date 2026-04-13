@@ -1,7 +1,6 @@
 import React from "react";
 import MERN from "../assets/mernEngineers.png";
 import Grohubz from "../assets/grohubz.png";
-import Qcom from "../assets/qcom.png";
 
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -10,99 +9,89 @@ import AnimatedButton from "../components/AnimatedButton";
 const projectsData = [
   {
     id: 1,
-    title: "Grohubz.com",
+    title: "Grohubz.com (SAAS)",
     description:
-      "Instagram DM automation platform for lead capture and engagement workflows",
+      "Instagram DM automation platform for lead capture and engagement workflows.",
     github: "https://github.com/DineshPawar7/grohubz.com",
     live: "https://grohubz.com",
     img: Grohubz,
   },
   {
     id: 2,
-    title: "Cloud Kitchen Website",
+    title: "MERN Engineers (Agency Website)",
     description:
-      "Built a responsive Cloud Kitchen website with menu and order management",
-    github: "https://github.com/DineshPawar7/cloud-kitchen-website",
-    live: "",
-    img: Qcom,
-  },
-  {
-    id: 3,
-    title: "MERN Engineers",
-    description:
-      "A personal agency website to showcase my freelance portfolio and services",
+      "Freelance portfolio with pixel-perfect UI from Figma design.",
     github: "https://github.com/DineshPawar7/MernEnginners",
     live: "https://mernengineers.netlify.app",
     img: MERN,
   },
-  
 ];
 
 const Projects = () => {
   return (
-    <section className="animate-[fadeIn_1.2s_ease-in-out] mt-[50px] px-4">
-      {/* Heading Section */}
-      <div className="text-[clamp(2.5rem,10vw,75px)] font-black uppercase text-white flex flex-col mb-[50px]">
-        <span className="leading-[1.2]">PROFESSIONAL</span>
-        <span className="text-[var(--primary-color)] text-[clamp(2.5rem,10vw,75px)] block leading-[0.5]">
-          PROJECTS
-        </span>
-      </div>
+    <section id="projects" className="w-full mx-auto text-white px-2 overflow-hidden">
+      {/* Heading Section - Standardized with other components */}
+      <h2 className="text-[clamp(2.2rem,8vw,60px)] font-bold mb-6 md:mb-16 text-white leading-tight text-center md:text-left uppercase">
+        Professional <span className="text-primary block md:inline">Projects</span>
+      </h2>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] max-w-[1000px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-[1100px] mx-auto">
         {projectsData.map((project) => (
           <div
             key={project.id}
-            className="bg-[var(--card-bg-color)] rounded-[10px] h-[390px] leading-tight text-center transition-all duration-300 hover:scale-[1.03] shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
+            className="group relative bg-[#1a1a1a] border border-white/10 rounded-[1rem] overflow-hidden transition-all duration-500 ease-in-out hover:border-primary/40 flex flex-col h-full shadow-2xl"
           >
-            <img
-              src={project.img || "https://via.placeholder.com/150"}
-              alt={project.title}
-              className="w-[99%] h-[60%] object-cover rounded-[8px] mb-[6px] mx-auto"
-            />
-            
-            <h3 className="text-[clamp(1.1rem,4vw,1.5rem)] font-bold text-white mb-0">
-              {project.title}
-            </h3>
-            
-            <p className="text-[clamp(0.85rem,3vw,1rem)] text-[#d5d5d5] mb-5 mt-1 px-2">
-              {project.description}
-            </p>
-            
-            <div className="flex gap-[15px] justify-center mt-[15px]">
-              {project.live && (
-                <AnimatedButton
-                  label="Live"
-                  icon={<FaExternalLinkAlt className="icon" />}
-                  href={project.live}
-                />
-              )}
-              {project.github && (
-                <AnimatedButton
-                  label="Code"
-                  icon={<FaGithub className="icon" />}
-                  href={project.github}
-                />
-              )}
+            {/* Image Container with Inner Zoom */}
+            <div className="relative h-[240px] w-full overflow-hidden">
+              <img
+                src={project.img || "https://via.placeholder.com/150"}
+                alt={project.title}
+                className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
+              />
+           
             </div>
+            
+            {/* Content Section */}
+            <div className="p-8 flex flex-col flex-grow text-center md:text-left">
+              <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors duration-500">
+                {project.title}
+              </h3>
+              
+              <p className="text-[#b0b0b0] mt-3 mb-8 leading-relaxed text-sm md:text-base flex-grow">
+                {project.description}
+              </p>
+              
+              {/* Buttons Container */}
+              <div className="flex gap-4 justify-center md:justify-start items-center">
+                {project.live && (
+                  <AnimatedButton
+                    label="Live"
+                    icon={<FaExternalLinkAlt className="text-sm" />}
+                    href={project.live}
+                  />
+                )}
+                {project.github && (
+                  <div className="group/btn">
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="flex items-center gap-2 text-white/60 hover:text-white transition-all duration-300 text-sm font-semibold uppercase tracking-widest"
+                    >
+                      <FaGithub className="text-xl" />
+                      <span>Code</span>
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Subtle background glow effect */}
+            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all duration-700"></div>
           </div>
         ))}
       </div>
-
-      {/* Add keyframe animation to your global CSS or tailwind.config.js */}
-      <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </section>
   );
 };

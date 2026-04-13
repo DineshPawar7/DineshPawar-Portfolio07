@@ -6,9 +6,10 @@ const Footer = () => {
       
       <div className="mx-auto flex flex-col items-center gap-5">
 
+
         <p className="text-[14px] mt-[10px] text-[#aaa]">
-          &copy; 2026 <strong className="font-bold">Dinesh Pawar</strong>. All Rights Reserved
-        </p>
+  &copy; 2026 <strong className="font-bold">Dinesh Pawar</strong>. Built with ❤️. Open Source (MIT License)
+</p>
         
       </div>
     </footer>

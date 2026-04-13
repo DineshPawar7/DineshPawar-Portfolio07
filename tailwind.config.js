@@ -23,7 +23,7 @@ export default {
     
     extend: {
       colors: {
-        primary: "#3B82F6",
+        primary: "#dbff96",
         secondary: "#10B981",
       },
       fontFamily: {

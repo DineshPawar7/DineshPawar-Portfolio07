@@ -29,33 +29,33 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex flex-col font-poppins text-white selection:bg-[var(--primary-color)] selection:text-black">
+    <div className="flex flex-col font-poppins text-white selection:bg-primary selection:text-black">
       
       {/* Hero Section */}
       <section className="min-h-[90vh] flex flex-col justify-center px-2 py-10">
         <div className="max-w-6xl">
-          <span className="text-[var(--primary-color)] font-medium tracking-widest uppercase text-sm mb-4 block">
+          <span className="text-primary font-medium tracking-widest uppercase text-sm mb-4 block">
             Available for hire
           </span>
           
           <h1 className="text-[clamp(2.8rem,10vw,5.5rem)] font-extrabold leading-[1.1] mb-4 tracking-tight">
             FULL STACK <br />
-            <span className="text-[var(--primary-color)]">
+            <span className="text-primary">
               WEB DEVELOPER
             </span>
           </h1>
 
           <p className="max-w-2xl text-gray-400 font-light mt-6 text-[clamp(1rem,2vw,1.25rem)] leading-relaxed">
-            Passionate Full stack web developer with expertise in building 
-            <span className="text-white font-medium"> scalable web applications</span>. 
-            I transform complex problems into elegant, efficient solutions.
+            Full-Stack Web Developer &
+            <span className="text-white font-medium"> SaaS Builder </span>
+            focused on building scalable digital products. I turn complex ideas into simple, efficient, and impactful solutions that drive real growth
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-5 items-center mt-10">
             <button
               onClick={handleResumeClick}
-              className="group relative px-8 py-4 bg-[var(--primary-color)] text-black font-bold rounded-full overflow-hidden transition-all hover:pr-12 active:scale-95 flex items-center gap-2"
+              className="group relative px-8 py-4 bg-primary text-black font-bold rounded-full overflow-hidden transition-all hover:pr-12 active:scale-95 flex items-center gap-2"
             >
               <span>View Resume</span>
               <TbDownload className="absolute right-4 opacity-0 group-hover:opacity-100 transition-all" />
@@ -63,7 +63,7 @@ const Home = () => {
 
             <button
               onClick={() => scrollToSection(projectsRef)}
-              className="flex items-center gap-2 px-6 py-4 text-white font-semibold hover:text-[var(--primary-color)] transition-colors group"
+              className="flex items-center gap-2 px-6 py-4 text-white font-semibold hover:text-primary transition-colors group"
             >
               See My Work
               <TbArrowRightCircle className="text-2xl group-hover:translate-x-1 group-hover:-rotate-45 transition-transform" />
@@ -87,32 +87,32 @@ const Home = () => {
       </section>
 
       {/* Content Sections */}
-      <main className="space-y-20 pb-20">
-        <section ref={projectsRef} className="scroll-mt-20">
+      <main className="md:space-y-20 space-y-10 pt-20">
+        <section ref={projectsRef} className="">
           <Projects />
         </section>
 
-        <section className=" py-20 px-6">
+        <section className=" ">
            <Experience />
         </section>
 
-        <section className="px-6">
+        <section className="">
            <Education />
         </section>
 
-        <section className="px-6">
+        <section className="">
            <SkillsAndTools />
         </section>
 
-        <section className="px-6 overflow-hidden">
+        <section className="">
            <GithubCalendar />
         </section>
 
-        <section className="px-6">
+        <section className="">
            <YouTube />
         </section>
 
-        <section ref={contactRef} className="scroll-mt-20 px-6">
+        <section ref={contactRef} className="">
           <Contact />
         </section>
       </main>

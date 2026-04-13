@@ -28,9 +28,9 @@ const About = () => {
       <ul>
         <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/dineshpawar07/</li>
         <li><strong>GitHub:</strong> https://github.com/dineshpawar</li>
-        <li><strong>Instagram:</strong> https://www.instagram.com/dineshpawar07_</li>
+        <li><strong>Instagram:</strong> https://www.instagram.com/dineshpawarr07</li>
         <li><strong>Portfolio:</strong> https://dinesh-pawar.netlify.app/</li>
-        <li><strong>Youtube:</strong> https://www.youtube.com/@DineshPawar_.07</li>
+        <li><strong>Youtube:</strong> https://www.youtube.com/@DineshPawarr07</li>
       </ul>
     </div>
   );

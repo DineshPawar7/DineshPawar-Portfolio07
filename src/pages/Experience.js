@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Experience = () => {
   const experiences = [
    {
-    title: "Frontend Developer",
+    title: "Frontend Developer (Intern)",
     company: "Buzdealz Pvt Ltd",
     description: [
       "Developed and managed the complete frontend of BuzDealz.com",
@@ -14,6 +14,7 @@ const Experience = () => {
       "Optimized UI/UX for smooth and consistent user experience"
     ],
     period: "July 2025 - March 2026",
+    time: "9 Months",
   },
     {
       title: "Web Developer (Part Time)",
@@ -21,6 +22,7 @@ const Experience = () => {
       description:
         "Developing responsive websites and web apps, collaborating with the team to deliver high-quality solutions using modern web technologies.",
       period: "March 2025 - July 2025",
+      time: "3 Months",
     },
     {
       title: "Full Stack Web Developer (Intern)",
@@ -28,6 +30,7 @@ const Experience = () => {
       description:
         "Developed a responsive company website for Koshank with API integration, ensuring a seamless user experience. Also contributed to client projects.",
       period: "Feb 2025 - May 2025",
+      time: "3 Months",
     },
   ];
 
@@ -49,7 +52,7 @@ const Experience = () => {
   );
 };
 
-const ExperienceCard = ({ title, company, description, period }) => {
+const ExperienceCard = ({ title, company, description, period, time }) => {
   return (
     <div className="group relative w-full bg-[#1a1a1a] border border-white/10 p-6 md:p-8 rounded-3xl transition-all duration-500 ease-in-out hover:bg-primary overflow-hidden">
       
@@ -81,6 +84,9 @@ const ExperienceCard = ({ title, company, description, period }) => {
 </p>
         <div className="mt-6 inline-block px-4 py-1 rounded-full border border-white/20 text-white group-hover:border-black/20 group-hover:text-black font-semibold text-sm transition-all duration-500">
           {period}
+        </div>
+        <div className="mt-6 inline-block px-4 py-1 rounded-full border border-white/20 text-white group-hover:border-black/20 group-hover:text-black font-semibold text-sm transition-all duration-500">
+          {time}
         </div>
       </div>
 

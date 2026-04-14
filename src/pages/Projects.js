@@ -7,17 +7,17 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import AnimatedButton from "../components/AnimatedButton";
 
 const projectsData = [
+  // {
+  //   id: 1,
+  //   title: "Grohubz.com (SAAS)",
+  //   description:
+  //     "Instagram DM automation platform for lead capture and engagement workflows.",
+  //   github: "https://github.com/DineshPawar7/grohubz.com",
+  //   live: "https://grohubz.com",
+  //   img: Grohubz,
+  // },
   {
     id: 1,
-    title: "Grohubz.com (SAAS)",
-    description:
-      "Instagram DM automation platform for lead capture and engagement workflows.",
-    github: "https://github.com/DineshPawar7/grohubz.com",
-    live: "https://grohubz.com",
-    img: Grohubz,
-  },
-  {
-    id: 2,
     title: "MERN Engineers (Agency Website)",
     description:
       "Freelance portfolio with pixel-perfect UI from Figma design.",

@@ -1,6 +1,6 @@
 import React from "react";
 import MERN from "../assets/mernEngineers.png";
-import Grohubz from "../assets/grohubz.png";
+// import Grohubz from "../assets/grohubz.png";
 
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";

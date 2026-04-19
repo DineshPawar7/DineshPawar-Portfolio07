@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
@@ -15,19 +15,36 @@ import Button from './pages/Button';
 import GithubCalendar from './pages/GithubCalendar';
 import Resume from './pages/Resume';
 import About from './pages/About';
+import Grohubz from './pages/grohubz';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isGrohubzPage = location.pathname === '/grohubz';
+
   return (
-    <Router>
+    <>
       <Header />
       <Button />
 
-      <div className="app-main-section">
-        <div className="left-card">
-          <Card />
-        </div>
+      {/* 
+          Yahan condition check ho rahi hai:
+          Agar Grohubz page hai toh koi class nahi lagegi (ya aap 'grohubz-layout' de sakte hain),
+          Nahi toh default 'app-main-section' lagegi.
+      */}
+      <div className={isGrohubzPage ? "" : "app-main-section"}>
+        
+        {/* Left Card sirf tab dikhega jab Grohubz page NAHO */}
+        {!isGrohubzPage && (
+          <div className="left-card">
+            <Card />
+          </div>
+        )}
 
-        <div className="right-components mainBg">
+        {/* 
+            Right content ki styling bhi sirf tabhi lagegi jab Grohubz page NAHO.
+            Grohubz page par ye ek simple div rahega bina kisi extra padding/margin ke.
+        */}
+        <div className={isGrohubzPage ? "w-full" : "right-components mainBg"}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
@@ -40,13 +57,20 @@ function App() {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/about" element={<About />} />
-
+            <Route path="/grohubz" element={<Grohubz />} />
           </Routes>
         </div>
-        
       </div>
 
       <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

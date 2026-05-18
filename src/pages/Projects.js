@@ -1,21 +1,21 @@
 import React from "react";
 import MERN from "../assets/mernEngineers.png";
-// import Grohubz from "../assets/grohubz.png";
+import Grohubz from "../assets/grohubz.png";
 
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import AnimatedButton from "../components/AnimatedButton";
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   title: "Grohubz.com (SAAS)",
-  //   description:
-  //     "Instagram DM automation platform for lead capture and engagement workflows.",
-  //   github: "https://github.com/DineshPawar7/grohubz.com",
-  //   live: "https://grohubz.com",
-  //   img: Grohubz,
-  // },
+  {
+    id: 1,
+    title: "Grohubz.com (SAAS)",
+    description:
+      "Instagram DM automation platform for lead capture and engagement workflows.",
+    github: "https://github.com/DineshPawar7/grohubz.com",
+    live: "https://grohubz.com",
+    img: Grohubz,
+  },
   {
     id: 1,
     title: "MERN Engineers (Agency Website)",

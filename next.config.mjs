@@ -12,6 +12,10 @@ const nextConfig = {
         hostname: 'ghchart.rshah.org',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
     ],
     formats: ['image/avif', 'image/webp'],
   },

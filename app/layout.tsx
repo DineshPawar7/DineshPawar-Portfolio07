@@ -139,7 +139,7 @@ export default function RootLayout({
       <body className="bg-dark text-white font-poppins antialiased">
         <Header />
 
-        <div className="flex max-w-7xl mx-auto min-h-screen">
+        <div className="flex max-w-[1400px] mx-auto min-h-screen">
           {/* Left Card - Fixed No Scroll */}
           <div className="hidden lg:block fixed w-[380px] h-screen overflow-hidden">
             <div className="flex items-center justify-center h-full">

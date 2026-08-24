@@ -11,7 +11,6 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 import { AiOutlineYoutube } from 'react-icons/ai';
-import Logo from '@/public/images/logo.png';
 
 const socials = [
   {
@@ -56,7 +55,7 @@ export const Card = () => {
         {/* Profile Image Container */}
         <div className="relative w-[250px] h-[240px] mx-auto mb-6">
           <Image
-            src={Logo}
+            src={"https://avatars.githubusercontent.com/u/175672643?v=4"}
             alt="Dinesh Pawar - Full Stack Developer"
             className="w-full h-full rounded-3xl object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 shadow-xl border border-white/5 group-hover:border-primary/20"
             width={250}

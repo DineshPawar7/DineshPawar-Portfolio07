@@ -26,8 +26,8 @@ export const SEO: React.FC<SEOProps> = ({
     'Next.js Developer',
   ],
   ogImage = '/og-image.jpg',
-  ogUrl = 'https://dinesh-pawar.netlify.app',
-  canonical = 'https://dinesh-pawar.netlify.app',
+  ogUrl = 'https://dineshpawar.work',
+  canonical = 'https://dineshpawar.work',
 }) => {
   return (
     <Head>

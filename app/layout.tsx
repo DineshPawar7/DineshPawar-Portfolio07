@@ -3,9 +3,7 @@ import { Inter, Poppins } from 'next/font/google';
 import './styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Card } from './components/Card';
-import { Button } from './components/Button';
-import { Header } from './components/Header';
+import LayoutShell from './components/LayoutShell';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,12 +26,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dinesh-pawar.netlify.app'),
+  metadataBase: new URL('https://dineshpawar.work'),
   title: {
     default: 'Dinesh Pawar - Full Stack Developer | India\'s Top Web Developer',
     template: '%s | Dinesh Pawar - Full Stack Developer',
   },
-  description: 'Dinesh Pawar is a Full Stack Web Developer and SaaS Builder from India. Expert in React, Node.js, Next.js, MongoDB, and modern web technologies. Building scalable digital products since 2021.',
+    description: 'Dinesh Pawar is a Full Stack Developer and SaaS builder from India, creating scalable products with React, Next.js, Node.js and MongoDB.',
   keywords: [
     'Dinesh Pawar',
     'Full Stack Developer',
@@ -47,7 +45,7 @@ export const metadata: Metadata = {
     'Freelance Web Developer',
     'Portfolio Website',
   ],
-  authors: [{ name: 'Dinesh Pawar', url: 'https://dinesh-pawar.netlify.app' }],
+  authors: [{ name: 'Dinesh Pawar', url: 'https://dineshpawar.work' }],
   creator: 'Dinesh Pawar',
   publisher: 'Dinesh Pawar',
   robots: {
@@ -64,7 +62,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://dinesh-pawar.netlify.app',
+    url: 'https://dineshpawar.work',
     title: 'Dinesh Pawar - Full Stack Developer | India\'s Top Web Developer',
     description: 'Full Stack Web Developer & SaaS Builder focused on building scalable digital products. Expert in React, Node.js, Next.js, and MongoDB.',
     siteName: 'Dinesh Pawar Portfolio',
@@ -84,9 +82,7 @@ export const metadata: Metadata = {
     creator: '@DineshPawarr07',
     images: ['/og-image.jpg'],
   },
-  alternates: {
-    canonical: 'https://dinesh-pawar.netlify.app',
-  },
+  alternates: { canonical: '/' },
   category: 'technology',
 };
 
@@ -99,8 +95,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Dinesh Pawar',
-    url: 'https://dinesh-pawar.netlify.app',
-    image: 'https://dinesh-pawar.netlify.app/logo.png',
+    url: 'https://dineshpawar.work',
+    image: 'https://dineshpawar.work/logo.png',
     jobTitle: 'Full Stack Developer',
     worksFor: {
       '@type': 'Organization',
@@ -137,25 +133,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-dark text-white font-poppins antialiased">
-        <Header />
-
-        <div className="flex max-w-[1400px] mx-auto min-h-screen">
-          {/* Left Card - Fixed No Scroll */}
-          <div className="hidden lg:block fixed w-[380px] h-screen overflow-hidden">
-            <div className="flex items-center justify-center h-full">
-              <Card />
-            </div>
-          </div>
-
-          {/* Right Content */}
-          <div className="flex-1 lg:ml-[380px]">
-            <main className="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-              {children}
-            </main>
-          </div>
-        </div>
-
-        <Button />
+        <LayoutShell>{children}</LayoutShell>
         <Analytics />
         <SpeedInsights />
       </body>

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/', '/admin/'],
     },
-    sitemap: 'https://dinesh-pawar.netlify.app/sitemap.xml',
+    sitemap: 'https://dineshpawar.work/sitemap.xml',
   };
 }

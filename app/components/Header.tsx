@@ -12,6 +12,8 @@ import { RiBrainLine } from "react-icons/ri";
 import { MdWorkOutline } from 'react-icons/md';
 import { PiStudentBold } from 'react-icons/pi';
 import { motion } from 'framer-motion';
+import { FaTools } from "react-icons/fa";
+
 
 const navItems = [
   { path: '/', icon: AiOutlineHome, label: 'Home' },
@@ -20,6 +22,7 @@ const navItems = [
   { path: '/experience', icon: MdWorkOutline, label: 'Experience' },
   { path: '/education', icon: PiStudentBold, label: 'Education' },
   { path: '/contact', icon: AiOutlineMail, label: 'Contact' },
+  { path: '/tools', icon: FaTools, label: 'Tools' },
 ];
 
 export const Header = () => {

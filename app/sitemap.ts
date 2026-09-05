@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
+import { TOOLS } from '@/data/tools';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dinesh-pawar.netlify.app';
+  const baseUrl = 'https://dineshpawar.work';
 
   const routes = [
     { path: '', priority: 1.0 },
@@ -15,10 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/testimonials', priority: 0.7 },
     { path: '/resume', priority: 0.8 },
     { path: '/about', priority: 0.8 },
-    { path: '/grohubz', priority: 0.7 },
+    { path: '/tools', priority: 0.95 },
   ];
 
-  return routes.map((route) => ({
+  const toolRoutes = TOOLS.map((tool) => ({ path: `/tools/${tool.slug}`, priority: 0.8 }));
+
+  return [...routes, ...toolRoutes].map((route) => ({
     url: `${baseUrl}${route.path}`,
     lastModified: new Date(),
     changeFrequency: route.path === '' ? 'daily' : 'weekly',

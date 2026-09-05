@@ -43,12 +43,7 @@ export default function Home() {
           </Link>
           .
         </p>
-        <Link
-          href="#tools"
-          className="inline-flex items-center gap-2 rounded-sm bg-[var(--ink)] text-[var(--paper)] px-5 py-3 text-sm font-medium hover:bg-[var(--signal)] transition-colors"
-        >
-          Browse all 25 tools <ArrowRight size={16} />
-        </Link>
+       
       </section>
 
       <div className="tick-rule" />
@@ -63,7 +58,7 @@ export default function Home() {
                 {items.map((tool) => (
                   <Link
                     key={tool.slug}
-                    href={`/${tool.slug}`}
+                    href={`/tools/${tool.slug}`}
                     className="device-panel p-5 flex flex-col gap-2 hover:border-[var(--signal)] transition-colors"
                   >
                     <span className="font-medium">{tool.shortTitle}</span>

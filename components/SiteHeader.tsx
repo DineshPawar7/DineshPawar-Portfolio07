@@ -13,7 +13,7 @@ export default function SiteHeader() {
           </span>
         </Link>
         <nav className="flex items-center gap-5 text-sm">
-          <Link href="/#tools" className="hover:text-[var(--signal)] transition-colors">
+          <Link href="/tools" className="hover:text-[var(--signal)] transition-colors">
             All tools
           </Link>
           <Link

@@ -26,9 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-   verification: {
-    google: "google-site-verification=KcoLoXd03ZyyXIxXM--paqc6Pqh-StNCbIqy_35TNCg",
-  },
+
   metadataBase: new URL('https://dineshpawar.work'),
   title: {
     default: 'Dinesh Pawar - Full Stack Developer | India\'s Top Web Developer',

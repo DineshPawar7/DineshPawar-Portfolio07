@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight } from "lucide-react";
 import { TOOLS, type ToolCategory } from "@/data/tools";
 import GrohubzPromo from "@/components/GrohubzPromo";
 

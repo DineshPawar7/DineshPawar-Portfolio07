@@ -58,7 +58,7 @@ export default function GrohubzPage() {
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">✦</span>
-                React + Next.js for frontend
+                React for frontend
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">✦</span>

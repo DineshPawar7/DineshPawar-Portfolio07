@@ -9,7 +9,7 @@ const educationData = [
     institution: 'Hi-Tech Institute of Technology, Aurangabad',
     description:
       'B.Tech in Computer Science with a basic foundation in programming and web development.',
-    period: '2021 - 2025',
+    period: '2021 - Present',
   },
   {
     title: 'Full Stack Web Development',

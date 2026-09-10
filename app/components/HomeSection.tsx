@@ -16,7 +16,7 @@ export const HomeSection = () => {
   };
 
   const handleResumeClick = () => {
-    window.open('/Dinesh-Pawar-Resume.pdf', '_blank');
+    window.open('/Dinesh_Pawar_Resume.pdf', '_blank');
   };
 
   return (

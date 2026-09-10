@@ -13,7 +13,7 @@ export const Resume = () => {
       >
         <div className="w-full">
           <iframe
-            src="/Dinesh-Pawar-Resume.pdf"
+            src="/Dinesh_Pawar_Resume.pdf"
             title="Dinesh Pawar Resume"
             className="w-full h-[800px] rounded-xl border border-white/10"
           />
@@ -21,7 +21,7 @@ export const Resume = () => {
 
         <div className="flex justify-center">
           <a
-            href="/Dinesh-Pawar-Resume.pdf"
+            href="/Dinesh_Pawar_Resume.pdf"
             download
             className="mt-6 px-6 py-3 bg-primary text-black font-bold rounded-full hover:bg-white transition-colors duration-300"
           >

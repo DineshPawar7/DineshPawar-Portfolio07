@@ -5,6 +5,7 @@ import './styles/globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import LayoutShell from './components/LayoutShell';
+import HireMePopup from './components/Popup';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -149,6 +150,7 @@ export default function RootLayout({
       <body className="bg-dark text-white font-poppins antialiased">
         <LayoutShell>{children}</LayoutShell>
         <Analytics />
+        <HireMePopup />
         <SpeedInsights />
       </body>
     </html>

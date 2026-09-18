@@ -79,7 +79,7 @@ export const Contact = () => {
           <div className="bg-[#1a1a1a] border border-white/10 p-6 rounded-3xl transition-all duration-500 hover:border-primary/40">
             <h3 className="text-primary font-semibold text-lg mb-2">Email</h3>
             <p className="text-white/90 break-all font-medium">
-              dineshpawar.dev@gmail.com
+              dinesh.pawarr77@gmail.com
             </p>
           </div>
           <div className="bg-[#1a1a1a] border border-white/10 p-6 rounded-3xl transition-all duration-500 hover:border-primary/40">

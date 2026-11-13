@@ -6,6 +6,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { AnimatedButton } from './AnimatedButton';
 import Grohubz from '@/public/images/grohubz.png';
 import MERN from '@/public/images/mernEngineers.png';
+import Mhbharti from '@/public/images/mhbharti.png';
 
 const projectsData = [
   {
@@ -20,14 +21,23 @@ const projectsData = [
   },
   {
     id: 2,
+    title: 'MH Bharti',
+        live: 'https://mhbharti.in',
+    description:
+      'Developed and deployed a job posting website on AWS EC2 with MongoDB, using Amazon S3 for image storage.',
+    img: Mhbharti,
+    alt: 'job posting website hosted on AWS',
+  },
+  {
+    id: 3,
     title: 'Shopify App',
     description:
-      'Custom Shopify app development with seamless functionality and integration.',
+      'Developed a custom Shopify app for a client, enabling accurate clothing size recommendations through seamless store integration.',
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnXsv0hHK0x-Bb4-9LGHSg4HnAzM6hdH7cJ-WaFRJuT09q5oi-sa3CmGI&s=10',
     alt: 'Custom Shopify App Development',
   },
   {
-    id: 3,
+    id: 4,
     title: 'MERN Engineers (Agency Website)',
     description:
       'Freelance portfolio with pixel-perfect UI from Figma design.',

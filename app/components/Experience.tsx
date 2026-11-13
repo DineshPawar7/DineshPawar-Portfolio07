@@ -5,6 +5,17 @@ import { motion } from 'framer-motion';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 const experiences = [
+   {
+    title: 'Full Stack Developer',
+    company: 'Techsurvi Pvt Ltd',
+    description: [
+      'Develop and improve frontend UI components of the Retenzy Shopify app, displayed live on merchant Shopify stores.',
+      'Debug, modify and maintain application code while implementing new features and enhancing user experience.',
+      'Perform functional and manual testing to identify bugs and ensure release quality.',
+    ],
+    period: 'Oct 2026',
+    time: 'Presnet',
+  },
   {
     title: 'Frontend Developer (Intern)',
     company: 'Buzdealz Pvt Ltd',
@@ -18,19 +29,14 @@ const experiences = [
     period: 'July 2025 - March 2026',
     time: '9 Months',
   },
-  {
-    title: 'Web Developer (Part Time)',
-    company: 'Viarsh Technologies',
-    description:
-      'Developing responsive websites and web apps, collaborating with the team to deliver high-quality solutions using modern web technologies.',
-    period: 'March 2025 - July 2025',
-    time: '3 Months',
-  },
+  
   {
     title: 'Full Stack Web Developer (Intern)',
     company: 'Koshank Pvt Ltd',
-    description:
-      'Developed a responsive company website for Koshank with API integration, ensuring a seamless user experience. Also contributed to client projects.',
+    description: [
+       'Built the complete CRM UI from scratch using React and converted UI designs into responsive components.',
+      'Integrated REST APIs to fetch and display dynamic data.'
+    ],
     period: 'Feb 2025 - May 2025',
     time: '3 Months',
   },

@@ -25,6 +25,8 @@ import {
   SiPrisma,
   SiPostgresql,
   SiSocketdotio,
+  SiAmazonaws,
+  SiShopify,
 } from 'react-icons/si';
 import { VscCode } from "react-icons/vsc";
 
@@ -52,6 +54,10 @@ const skillData = {
     { name: 'Prisma', icon: <SiPrisma /> },
     { name: 'Firebase', icon: <FaFire /> },
     { name: 'Redis', icon: <SiRedis /> },
+  ],
+  'Cloud & Platforms': [
+    { name: 'AWS', icon: <SiAmazonaws /> },
+    { name: 'Shopify App Development', icon: <SiShopify /> },
   ],
   'Tools & DevOps': [
     { name: 'Git', icon: <FaGitAlt /> },

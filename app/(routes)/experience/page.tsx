@@ -3,8 +3,8 @@ import { Experience } from '../../components/Experience';
 
 export const metadata: Metadata = {
   title: 'Professional Experience | Dinesh Pawar - Full Stack Developer',
-  description: 'Explore Dinesh Pawar\'s professional experience as a Full Stack Web Developer. Worked at Buzdealz, Viarsh Technologies, and Koshank Pvt Ltd.',
-  keywords: 'Dinesh Pawar experience, Full Stack Developer experience, Web Developer portfolio, Buzdealz, Viarsh Technologies, Koshank',
+  description: 'Explore Dinesh Pawar\'s professional experience as a Full Stack Web Developer. Worked at Buzdealz, and Koshank Pvt Ltd.',
+  keywords: 'Dinesh Pawar experience, Full Stack Developer experience, Web Developer portfolio, Buzdealz, Koshank',
 };
 
 export default function ExperiencePage() {
